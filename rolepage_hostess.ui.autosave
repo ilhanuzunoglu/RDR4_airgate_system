@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RolePage_Hostess</class>
+ <widget class="QWidget" name="RolePage_Hostess">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelTitle">
+     <property name="text">
+      <string>Hostes Sayfası</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="comboCity">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabAircraft">
+      <attribute name="title">
+       <string>Uçak Bilgisi</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutAircraft">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaAircraftInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetAircraftInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>769</width>
+            <height>68</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutAircraftInfo">
+           <item>
+            <widget class="QLabel" name="labelAircraftInfo">
+             <property name="text">
+              <string>Model: Airbus A320\nTescil: TC-ABC\nKapasite: 180\nÜretici: Airbus\nSeri No: 12345\nUçak Yaşı: 6 yıl</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSeats">
+      <attribute name="title">
+       <string>Koltuk Bilgisi</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutSeats">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaSeatsInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetSeatsInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>651</width>
+            <height>68</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutSeatsInfo">
+           <item>
+            <widget class="QLabel" name="labelSeatsInfo">
+             <property name="text">
+              <string>Toplam Koltuk: 180\nDolu: 150\nBoş: 30\nEngelli Koltuk: 2\nKoltuk Planı: 1A 1B 1C ...</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMenu">
+      <attribute name="title">
+       <string>Uçak Menüsü</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutMenu">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaMenuInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetMenuInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1125</width>
+            <height>68</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutMenuInfo">
+           <item>
+            <widget class="QLabel" name="labelMenuInfo">
+             <property name="text">
+              <string>Yemekler: Tavuk, Makarna, Vejetaryen\nİçecekler: Su, Meyve Suyu, Çay, Kahve\nAlerjenler: Gluten, Süt, Fındık\nÖzel Sipariş: Vejetaryen (2), Çocuk (1)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabTimes">
+      <attribute name="title">
+       <string>Uçuş Saatleri</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutTimes">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaTimesInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetTimesInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>463</width>
+            <height>68</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutTimesInfo">
+           <item>
+            <widget class="QLabel" name="labelTimesInfo">
+             <property name="text">
+              <string>Kalkış: 14:30\nVarış: 17:10\nBoarding: 14:00\nGecikme: Yok</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabRoute">
+      <attribute name="title">
+       <string>Nereden-Nereye</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutRoute">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaRouteInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetRouteInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>402</width>
+            <height>43</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutRouteInfo">
+           <item>
+            <widget class="QLabel" name="labelRouteInfo">
+             <property name="text">
+              <string>İstanbul (IST) → Paris (CDG)\nTahmini Süre: 3s 40dk</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnBack">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ana Menüye Dön</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

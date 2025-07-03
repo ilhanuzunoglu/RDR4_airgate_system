@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RolePage_Passenger</class>
+ <widget class="QWidget" name="RolePage_Passenger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string></string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QComboBox" name="comboCity">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tabFlight">
+      <attribute name="title">
+       <string>Uçuş Bilgileri</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutFlight">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaFlights">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetFlights">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>438</width>
+            <height>105</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutFlights"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWeather">
+      <attribute name="title">
+       <string>Hava Durumu</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutWeather">
+       <item>
+        <widget class="QLabel" name="labelWeather">
+         <property name="styleSheet">
+          <string>font-size: 22px; font-weight: bold;</string>
+         </property>
+         <property name="text">
+          <string>Hava durumu burada görünecek</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabCurrency">
+      <attribute name="title">
+       <string>Döviz</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutCurrency">
+       <item>
+        <widget class="QLabel" name="labelCurrency">
+         <property name="styleSheet">
+          <string>font-size: 22px; font-weight: bold;</string>
+         </property>
+         <property name="text">
+          <string>Döviz bilgisi burada görünecek</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabNews">
+      <attribute name="title">
+       <string>Haberler</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutNews">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaNews">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetNews">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>438</width>
+            <height>105</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutNews"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnBack">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ana Menüye Dön</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

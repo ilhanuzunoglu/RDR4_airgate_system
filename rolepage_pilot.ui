@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RolePage_Pilot</class>
+ <widget class="QWidget" name="RolePage_Pilot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string></string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QComboBox" name="comboCity">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tabFlight">
+      <attribute name="title">
+       <string>Uçuş Bilgisi</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutFlight">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaFlights">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetFlights">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>438</width>
+            <height>105</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutFlights"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabTech">
+      <attribute name="title">
+       <string>Teknik Bilgi</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutTech">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaTech">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetTech">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>438</width>
+            <height>105</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutTechBoxes"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabLive">
+      <attribute name="title">
+       <string>Canlı Konum &amp; Havalimanı</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayoutLive">
+       <item>
+        <widget class="QScrollArea" name="scrollAreaLiveInfo">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetLiveInfo">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>471</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="layoutLiveInfo">
+           <item>
+            <widget class="QLabel" name="labelLiveInfo">
+             <property name="styleSheet">
+              <string>font-size: 16px; font-weight: bold; background:#f7fafd; border:2px solid #2a4d69; border-radius:10px; padding:10px;</string>
+             </property>
+             <property name="text">
+              <string>Canlı konum ve havalimanı bilgisi burada görünecek</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnBack">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ana Menüye Dön</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
