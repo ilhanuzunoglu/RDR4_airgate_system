@@ -79,7 +79,7 @@ void RolePage_Passenger::updateAllData() {
 
 void RolePage_Passenger::updateFlightInfo(const QString &city) {
     QString iata = cityToIata.value(city, "IST");
-    QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+    QString apiKey = "enter your key";
     QString url = QString("http://api.aviationstack.com/v1/flights?access_key=%1&arr_iata=%2&limit=8").arg(apiKey).arg(iata);
     networkManager->get(QNetworkRequest(QUrl(url)));
 }
