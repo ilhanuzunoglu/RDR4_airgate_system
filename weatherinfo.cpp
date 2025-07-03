@@ -8,7 +8,7 @@
 
 WeatherInfo::WeatherInfo(QObject *parent) : QObject(parent),
     manager(new QNetworkAccessManager(this)),
-    apiKey("b8aeca139d5125692f89b7038ad38462") // OpenWeatherMap API anahtarı
+    apiKey("enter your key") // OpenWeatherMap API anahtarı
 {
     connect(manager, &QNetworkAccessManager::finished, this, &WeatherInfo::onNetworkReply);
 }
