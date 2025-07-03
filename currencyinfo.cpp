@@ -7,7 +7,7 @@
 
 CurrencyInfo::CurrencyInfo(QObject *parent) : QObject(parent),
     manager(new QNetworkAccessManager(this)),
-    apiKey("a8489a8685d686522556b083") // exchangerate-api.com anahtarı
+    apiKey("enter your key") // exchangerate-api.com anahtarı
 {
     connect(manager, &QNetworkAccessManager::finished, this, &CurrencyInfo::onNetworkReply);
 }
