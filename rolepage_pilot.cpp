@@ -83,7 +83,7 @@ void RolePage_Pilot::clearFlightBoxes() {
 void RolePage_Pilot::updateFlightInfo(const QString &city) {
     clearFlightBoxes();
     QString iata = cityToIata.value(city, "IST");
-    QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+    QString apiKey = "enter your key";
     QString url = QString("http://api.aviationstack.com/v1/flights?access_key=%1&arr_iata=%2&limit=8").arg(apiKey).arg(iata);
     networkManager->get(QNetworkRequest(QUrl(url)));
 }
@@ -175,7 +175,7 @@ void RolePage_Pilot::onFlightBoxClicked() {
     QString techFallback = box->property("techInfo").toString();
     QString city = ui->comboCity->currentText();
     QString iata = cityToIata.value(city, "IST");
-    QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+    QString apiKey = "enter your key";
     QString url = QString("http://api.aviationstack.com/v1/flights?access_key=%1&arr_iata=%2&limit=8").arg(apiKey).arg(iata);
     QNetworkReply *reply = networkManager->get(QNetworkRequest(QUrl(url)));
     connect(reply, &QNetworkReply::finished, [this, reply, index, techFallback]() {
@@ -237,7 +237,7 @@ void RolePage_Pilot::updatePlaneInfo(const QString &regNum, const QString &icao2
         if (!fallback.isEmpty()) addTechBox(fallback);
     };
     if (!regNum.isEmpty()) {
-        QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+        QString apiKey = "enter your key";
         QString url = QString("http://api.aviationstack.com/v1/airplanes?access_key=%1&registration_number=%2").arg(apiKey).arg(regNum);
         QNetworkReply *reply = networkManager->get(QNetworkRequest(QUrl(url)));
         connect(reply, &QNetworkReply::finished, [this, reply, fallback, fillTechInfo, addTechBox]() {
@@ -260,7 +260,7 @@ void RolePage_Pilot::updatePlaneInfo(const QString &regNum, const QString &icao2
             reply->deleteLater();
         });
     } else if (!icao24.isEmpty()) {
-        QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+        QString apiKey = "enter your key";
         QString url = QString("http://api.aviationstack.com/v1/airplanes?access_key=%1&icao24=%2").arg(apiKey).arg(icao24);
         QNetworkReply *reply = networkManager->get(QNetworkRequest(QUrl(url)));
         connect(reply, &QNetworkReply::finished, [this, reply, fallback, fillTechInfo, addTechBox]() {
@@ -323,7 +323,7 @@ void RolePage_Pilot::updateAirportInfo(const QString &depIata, const QString &ar
         ui->labelLiveInfo->setText("Havalimanı bilgisi bulunamadı.");
         return;
     }
-    QString apiKey = "abf69b83dac7991586a8d886f84081ce";
+    QString apiKey = "enter your key";
     QString url = QString("http://api.aviationstack.com/v1/airports?access_key=%1&iata_code=%2").arg(apiKey).arg(depIata);
     networkManager->get(QNetworkRequest(QUrl(url)));
 }
